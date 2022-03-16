@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+PAYLOAD_FILE="$(dirname $0)/../payload.json"
+URL='https://dev.wah.wtf'
+
+curl \
+  --url "$URL" \
+  -X POST \
+  -H 'Content-Type: application/json' \
+  -d "@$PAYLOAD_FILE"

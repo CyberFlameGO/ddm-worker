@@ -1,0 +1,21 @@
+name = "ddm-transform"
+webpack_config = "./webpack.config.js"
+type = "webpack"
+route = ''
+zone_id = ''
+usage_model = ''
+compatibility_flags = []
+workers_dev = true
+compatibility_date = "2022-03-16"
+
+[build]
+command = "yarn build"
+watch_dir = "src"
+
+[build.upload]
+dir = "build"
+main = "worker.js"
+
+[miniflare]
+build_watch_dirs = ["src"]
+env_path = '.env'
