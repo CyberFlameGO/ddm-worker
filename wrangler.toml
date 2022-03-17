@@ -16,5 +16,5 @@ dir = "build"
 main = "worker.js"
 
 [miniflare]
-build_watch_dirs = ["src", "src"]
+build_watch_dirs = ["src"]
 env_path = '.env'
