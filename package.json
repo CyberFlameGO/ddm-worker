@@ -25,6 +25,9 @@
     "posttest": "yarn run lint"
   },
   "dependencies": {
-    "@octokit/webhooks": "^9.23.0"
+    "@octokit/webhooks": "^9.23.0",
+    "@yozora/ast": "^2.0.0",
+    "@yozora/parser-gfm-ex": "^2.0.0",
+    "node-html-parser": "^5.3.3"
   }
 }

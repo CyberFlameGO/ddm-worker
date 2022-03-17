@@ -23,6 +23,7 @@ async function handleRequest(req: Request) {
 
   if (NODE_ENV === 'development') {
     const body: EmitterWebhookEvent = await req.json();
+
     await wh.receive(body);
   } else {
     const delivery = req.headers.get('X-GitHub-Delivery')!;

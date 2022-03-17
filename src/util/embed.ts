@@ -1,28 +1,55 @@
 import {EmitterWebhookEvent, EmitterWebhookEventName} from '@octokit/webhooks';
 import type {APIEmbed} from 'discord-api-types/v10';
 
+import {getImagesFromMarkdown} from '../util/parser';
+
 export const buildEmbeds = <T extends EmitterWebhookEventName>(
   event: EmitterWebhookEvent<T>
 ): APIEmbed[] => {
-  const embeds: APIEmbed[] = [];
-
   switch (event.name) {
     case 'commit_comment': {
-      const bodyChunks = chunkString(event.payload.comment.body, 2048);
+      const {comment, repository, sender} = event.payload;
 
-      for (const chunk of bodyChunks) {
-        const embed: APIEmbed = {
-          description: chunk,
-        };
+      const bodyChunks = chunkString(
+        comment.body.replace(/\\r\\n/g, '\n').trim(),
+        2048
+      );
 
-        embeds.push(embed);
-      }
+      const build = (chunk: string): APIEmbed => ({
+        description: chunk,
+      });
 
-      break;
+      const buildImageEmbed = (img: string): APIEmbed => ({
+        image: {
+          url: img,
+        },
+      });
+
+      const embeds = bodyChunks.map((chunk, i) => {
+        const embed = build(chunk);
+
+        if (i === 0) {
+          embed.title = `[${repository.name}:${
+            repository.default_branch
+          }] New comment on commit \`${comment.commit_id.substring(0, 6)}\``;
+          embed.url = comment.html_url;
+          embed.author = {
+            icon_url: sender.avatar_url,
+            name: sender.name || sender.login,
+            url: sender.url,
+          };
+        }
+        return embed;
+      });
+
+      const imgs = getImagesFromMarkdown(comment.body);
+      const imgEmbeds = imgs.map(buildImageEmbed);
+
+      return embeds.concat(imgEmbeds);
     }
   }
 
-  return embeds;
+  return [];
 };
 
 // TODO: somehow make ``` not get broken/split between multiple embeds

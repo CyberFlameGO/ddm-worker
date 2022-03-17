@@ -10,12 +10,11 @@ compatibility_date = "2022-03-16"
 
 [build]
 command = "yarn build"
-watch_dir = "src"
 
 [build.upload]
 dir = "build"
 main = "worker.js"
 
 [miniflare]
-build_watch_dirs = ["src"]
+build_watch_dirs = ["src", "src"]
 env_path = '.env'

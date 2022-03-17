@@ -555,6 +555,303 @@
   resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.2.tgz#d291c6a4e97989b5c61d9acf396ae4fe133a718d"
   integrity sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
 
+"@yozora/ast-util@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/ast-util/-/ast-util-2.0.0.tgz#6dc1a895cc493a8557df9470e4b6aa6acdae4a2d"
+  integrity sha512-6F8FW8MuednrNIpOC5euSZbxPizFO+yBi7ho/C0UQS5Z8mntQJI9/8AyqWvjBW6VT3xM2pgAw4HQBGTXgHYiew==
+  dependencies:
+    "@yozora/ast" "^2.0.0"
+    "@yozora/character" "^2.0.0"
+
+"@yozora/ast@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/ast/-/ast-2.0.0.tgz#bcf000963d3eca967cfbe90750f2ba68f472e10b"
+  integrity sha512-hfuI0k/Gqg2Hr8gXdbeYAA7Q78TVm8IAPMiHHtMlHq2qKnZJ1WP8HG0fBZ/AksluYRuMFtPorg4UGNcR00KvFA==
+
+"@yozora/character@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/character/-/character-2.0.0.tgz#bdd33c2eff6a6e3fb111123af69be6bad126bfb6"
+  integrity sha512-qsgU4Eo3e6xc21rDfmtCQhEPClggdSxNFyW9Dd8Q0V+8ekcc+uovCP6Wou/MvOcoZoeKoNVRaxH/emnNQGLvgg==
+
+"@yozora/core-parser@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/core-parser/-/core-parser-2.0.0.tgz#aed59d5d310264ae301bfbf45764df0033cd0524"
+  integrity sha512-p8y1TYGJvpeqjHPdqPIE0PNX9iIiH65vLphUzRI/3zm4V9BNie4jkfnzhi77f8V23xXYZ5sHUKr8p35zHAAB6w==
+  dependencies:
+    "@yozora/ast" "^2.0.0"
+    "@yozora/ast-util" "^2.0.0"
+    "@yozora/character" "^2.0.0"
+    "@yozora/core-tokenizer" "^2.0.0"
+    "@yozora/invariant" "^2.0.0"
+
+"@yozora/core-tokenizer@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/core-tokenizer/-/core-tokenizer-2.0.0.tgz#1ad0f27354dfe957831e816645b8bbad98b2ece9"
+  integrity sha512-A0xLvitaGPIZWsSvovvPvubsuUDMU4eINkoopmYxHhAQnDBDr0O1+gy5oY54w4S28gKlpnjeE5OQPb7AwOwX4Q==
+  dependencies:
+    "@yozora/ast" "^2.0.0"
+    "@yozora/character" "^2.0.0"
+
+"@yozora/invariant@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/invariant/-/invariant-2.0.0.tgz#a52d9a420bd037b8c8ee2f1279b8376610f17b36"
+  integrity sha512-T6uxOGjzSx87XL8X2/qQmDAZOCExWPi56WDxFbn7AyYYx1he2pdLVt4PC1stfsMmsEbPm7BZgZ7zb6/KbYsuKQ==
+
+"@yozora/parser-gfm-ex@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/parser-gfm-ex/-/parser-gfm-ex-2.0.0.tgz#77654eba6c250b378a82ca61135d94064f02d256"
+  integrity sha512-yRlm5xRxMKlSShuSRDegeTcI9BSRBv7oyTThdJCzujBg25u6KTFtGROmWqhRmO98TMh0zl6Ldd43x7uf91sZng==
+  dependencies:
+    "@yozora/ast" "^2.0.0"
+    "@yozora/core-parser" "^2.0.0"
+    "@yozora/tokenizer-autolink" "^2.0.0"
+    "@yozora/tokenizer-autolink-extension" "^2.0.0"
+    "@yozora/tokenizer-blockquote" "^2.0.0"
+    "@yozora/tokenizer-break" "^2.0.0"
+    "@yozora/tokenizer-definition" "^2.0.0"
+    "@yozora/tokenizer-delete" "^2.0.0"
+    "@yozora/tokenizer-emphasis" "^2.0.0"
+    "@yozora/tokenizer-fenced-code" "^2.0.0"
+    "@yozora/tokenizer-heading" "^2.0.0"
+    "@yozora/tokenizer-html-block" "^2.0.0"
+    "@yozora/tokenizer-html-inline" "^2.0.0"
+    "@yozora/tokenizer-image" "^2.0.0"
+    "@yozora/tokenizer-image-reference" "^2.0.0"
+    "@yozora/tokenizer-indented-code" "^2.0.0"
+    "@yozora/tokenizer-inline-code" "^2.0.0"
+    "@yozora/tokenizer-link" "^2.0.0"
+    "@yozora/tokenizer-link-reference" "^2.0.0"
+    "@yozora/tokenizer-list" "^2.0.0"
+    "@yozora/tokenizer-paragraph" "^2.0.0"
+    "@yozora/tokenizer-setext-heading" "^2.0.0"
+    "@yozora/tokenizer-table" "^2.0.0"
+    "@yozora/tokenizer-text" "^2.0.0"
+    "@yozora/tokenizer-thematic-break" "^2.0.0"
+
+"@yozora/tokenizer-autolink-extension@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/tokenizer-autolink-extension/-/tokenizer-autolink-extension-2.0.0.tgz#9a56ec4073f634cac08b69dea8d74d549ca19006"
+  integrity sha512-kUvWovBjEEmH3KhomJOPyPYS+Aa3+f7fXM9JT4Owt7WzHT2S3P++ilnwF4JulC50v5XwrCRpWFhfq6otavqcvg==
+  dependencies:
+    "@yozora/ast" "^2.0.0"
+    "@yozora/character" "^2.0.0"
+    "@yozora/core-tokenizer" "^2.0.0"
+    "@yozora/tokenizer-autolink" "^2.0.0"
+
+"@yozora/tokenizer-autolink@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/tokenizer-autolink/-/tokenizer-autolink-2.0.0.tgz#1933249d2d8aa68701b2f8a1bb530ca50d113254"
+  integrity sha512-7r/2zQWo4gp3+23dDq0CrFF0d1bR6P24JfywL/6hoTiAw7Be2ilPeJm9m/IP62uqUo219iMR9grGjc26iDIMiQ==
+  dependencies:
+    "@yozora/ast" "^2.0.0"
+    "@yozora/character" "^2.0.0"
+    "@yozora/core-tokenizer" "^2.0.0"
+
+"@yozora/tokenizer-blockquote@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/tokenizer-blockquote/-/tokenizer-blockquote-2.0.0.tgz#8b11724b60e11c107fcbeecdac415129b2cd6ae4"
+  integrity sha512-IjJWiH3JB3eBNMqxrUElvKydOIcKYA/RCEtD8M7PpHQquRjgnzLsIHe5TmdPX+EFTaPj4Yq9uYGi23IGipIZrA==
+  dependencies:
+    "@yozora/ast" "^2.0.0"
+    "@yozora/character" "^2.0.0"
+    "@yozora/core-tokenizer" "^2.0.0"
+
+"@yozora/tokenizer-break@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/tokenizer-break/-/tokenizer-break-2.0.0.tgz#9882579aae94e58520375b0a9310dc6c8392200b"
+  integrity sha512-pYCN66zAOzH563zRzsfOCzI2JNSoRYH4r40zoJFT2woTxSOf6nZa6R9ogeClGJ2wDXxyTW4qJYfu3f3ZJS55yg==
+  dependencies:
+    "@yozora/ast" "^2.0.0"
+    "@yozora/character" "^2.0.0"
+    "@yozora/core-tokenizer" "^2.0.0"
+
+"@yozora/tokenizer-definition@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/tokenizer-definition/-/tokenizer-definition-2.0.0.tgz#bf318ab44be8450ed742ce6cc46c59d0c990cb79"
+  integrity sha512-nuruzeNPyQbRx8HIf5jnCfBr/R8jCq+fJCzk27dxo1HwNimaS2djlrCmqAokpUOur+V/VssCjBK0tMaeacwqDQ==
+  dependencies:
+    "@yozora/ast" "^2.0.0"
+    "@yozora/character" "^2.0.0"
+    "@yozora/core-tokenizer" "^2.0.0"
+
+"@yozora/tokenizer-delete@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/tokenizer-delete/-/tokenizer-delete-2.0.0.tgz#c2a88ae55bf6f852aa70c6679c256e9a5847ec4b"
+  integrity sha512-c1SIqm4Un78GsqZy/HC08YIk5+F6VnK91B1oaOWz+ek6dlDDy3KvfrAoOXJQUbEewF861w81inoKyAxK9MtREw==
+  dependencies:
+    "@yozora/ast" "^2.0.0"
+    "@yozora/character" "^2.0.0"
+    "@yozora/core-tokenizer" "^2.0.0"
+
+"@yozora/tokenizer-emphasis@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/tokenizer-emphasis/-/tokenizer-emphasis-2.0.0.tgz#be02c3774e707da4b05e18bd1360a2a92bb30545"
+  integrity sha512-mCC2et34oRDVP9UUx4ZspIbxoYEquyhS8dx2T+Sdt9rN8P3QVPQgG5xd9i6M42h8v7Oc/ZLCvC66LeufUYAB+A==
+  dependencies:
+    "@yozora/ast" "^2.0.0"
+    "@yozora/character" "^2.0.0"
+    "@yozora/core-tokenizer" "^2.0.0"
+
+"@yozora/tokenizer-fenced-block@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/tokenizer-fenced-block/-/tokenizer-fenced-block-2.0.0.tgz#7bfbf34f823f51d10c22025264bffc16c396b31a"
+  integrity sha512-/49icI30WCXky5bY2SsG/1l9v7MGT/Xv27no5uBxbC4SJRVdZxK61T9i1tRZloEb0eWWbjFpWehA+2Rtt2G6dQ==
+  dependencies:
+    "@yozora/ast" "^2.0.0"
+    "@yozora/character" "^2.0.0"
+    "@yozora/core-tokenizer" "^2.0.0"
+
+"@yozora/tokenizer-fenced-code@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/tokenizer-fenced-code/-/tokenizer-fenced-code-2.0.0.tgz#2f7fb5e9f64768b59150c95f2b73406228954323"
+  integrity sha512-ejiNONYEK6Ia6tFGsDqRktaIkjuq70PJKdghwRFrH2YsiPRLevmTaoQxCxQJypJfptCEmjQ+4CQ0EmSduj9BRg==
+  dependencies:
+    "@yozora/ast" "^2.0.0"
+    "@yozora/character" "^2.0.0"
+    "@yozora/core-tokenizer" "^2.0.0"
+    "@yozora/tokenizer-fenced-block" "^2.0.0"
+
+"@yozora/tokenizer-heading@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/tokenizer-heading/-/tokenizer-heading-2.0.0.tgz#ff85591f83f74541b3ae68cb35cd762ad09df8c8"
+  integrity sha512-Mvyd3Tlm7/txJ02oA03Nhti+g7wcIoUDSYbWdqavUk8L01gn5yF92z12CPETh1a3bSi4Qp77ynPWfJJnYsKkFw==
+  dependencies:
+    "@yozora/ast" "^2.0.0"
+    "@yozora/character" "^2.0.0"
+    "@yozora/core-tokenizer" "^2.0.0"
+
+"@yozora/tokenizer-html-block@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/tokenizer-html-block/-/tokenizer-html-block-2.0.0.tgz#78d343c9e0e253cb6ed76924a52b25b2c22255e3"
+  integrity sha512-HlN1Nwl1WymhFfqGDVBskOdRXhkNBo+lPpmBHrhf9NB53ZEQUiUiKekMNkPv0lVmkagOCBFk9WrW5SOsiv44Dw==
+  dependencies:
+    "@yozora/ast" "^2.0.0"
+    "@yozora/character" "^2.0.0"
+    "@yozora/core-tokenizer" "^2.0.0"
+
+"@yozora/tokenizer-html-inline@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/tokenizer-html-inline/-/tokenizer-html-inline-2.0.0.tgz#aa6c5bf92ac9a907ccc2a853a21fbfd4e384c0d8"
+  integrity sha512-XYiNj+t9MbYlLYVLSsBq9tK6KynAtT2UBW3w/whopL1nrgaX/qzalJXpa0m4OeNytUOfDqkqebs9Ya453WqYHQ==
+  dependencies:
+    "@yozora/ast" "^2.0.0"
+    "@yozora/character" "^2.0.0"
+    "@yozora/core-tokenizer" "^2.0.0"
+    "@yozora/tokenizer-html-block" "^2.0.0"
+
+"@yozora/tokenizer-image-reference@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/tokenizer-image-reference/-/tokenizer-image-reference-2.0.0.tgz#30bc7a30bf3561e0bc5fd594eaa20e5e9e831086"
+  integrity sha512-JvdIa3EhUV5nQPn+XUGJF6zoCKY5oZ1qD9Unq9pzF1PrCjra0t6LpqqOGQIvoMa7a+D0yR+kB0nRfxtAMk/RUA==
+  dependencies:
+    "@yozora/ast" "^2.0.0"
+    "@yozora/character" "^2.0.0"
+    "@yozora/core-tokenizer" "^2.0.0"
+    "@yozora/tokenizer-image" "^2.0.0"
+    "@yozora/tokenizer-link" "^2.0.0"
+    "@yozora/tokenizer-link-reference" "^2.0.0"
+
+"@yozora/tokenizer-image@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/tokenizer-image/-/tokenizer-image-2.0.0.tgz#7d27bc369b86b956df815a3eec976197be537fe7"
+  integrity sha512-bTxfUaERBYFcO7EcLU3fm/mBEQG9yI/Rj74tXTCk4UZoU+bcVI89XVKvPgmViXBOrbLod+jxVWiA+Y3JZsBSWg==
+  dependencies:
+    "@yozora/ast" "^2.0.0"
+    "@yozora/character" "^2.0.0"
+    "@yozora/core-tokenizer" "^2.0.0"
+    "@yozora/tokenizer-link" "^2.0.0"
+
+"@yozora/tokenizer-indented-code@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/tokenizer-indented-code/-/tokenizer-indented-code-2.0.0.tgz#7a096e78ded21accf887a3bfff7206abe6157e77"
+  integrity sha512-St2oCA2v1xMi+gOFgDu2JyU87khPDv8XuDuDJgrgetkzVydyqvMtBK2NyZN3lzXDEu70JRNuLHa+6Q+o2hye3g==
+  dependencies:
+    "@yozora/ast" "^2.0.0"
+    "@yozora/character" "^2.0.0"
+    "@yozora/core-tokenizer" "^2.0.0"
+
+"@yozora/tokenizer-inline-code@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/tokenizer-inline-code/-/tokenizer-inline-code-2.0.0.tgz#c6f3a39459d5b877d8ac3c4067fcb6d1cf544a15"
+  integrity sha512-SpsDYk6U/MddaJMgT4cwMkulNV+xWizEACiuqW6qVJtqHsbogT/LtCf6ibiVSRkB6WFkb4n0csRGATtWa/YfNg==
+  dependencies:
+    "@yozora/ast" "^2.0.0"
+    "@yozora/character" "^2.0.0"
+    "@yozora/core-tokenizer" "^2.0.0"
+
+"@yozora/tokenizer-link-reference@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/tokenizer-link-reference/-/tokenizer-link-reference-2.0.0.tgz#fab0bfdf6465849fff9eeeaaa0b4660e58aeeb54"
+  integrity sha512-wEd76rEonGjN4Ku9zDsN2UO4Ie/5bARmPskCKdVfU7FLOxLkzDPyNRDxha5FE/oFleoGPUAb1EZa5Ji/6WbqLQ==
+  dependencies:
+    "@yozora/ast" "^2.0.0"
+    "@yozora/character" "^2.0.0"
+    "@yozora/core-tokenizer" "^2.0.0"
+    "@yozora/tokenizer-link" "^2.0.0"
+
+"@yozora/tokenizer-link@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/tokenizer-link/-/tokenizer-link-2.0.0.tgz#f3e1468109a3e2c8d9bba655ff2b6a13b8e693e2"
+  integrity sha512-XJJbWQA1+12PW4cnRpxz19VFEidbECRLtGjblp0A3xqZdrrC5WNLy3DKUFdOxHUxFKbZ0+8Xxyopb8JXwhRI+A==
+  dependencies:
+    "@yozora/ast" "^2.0.0"
+    "@yozora/character" "^2.0.0"
+    "@yozora/core-tokenizer" "^2.0.0"
+
+"@yozora/tokenizer-list@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/tokenizer-list/-/tokenizer-list-2.0.0.tgz#437ea252bffa05da1e13b83d26f74e45dd295102"
+  integrity sha512-4UQeXWUcIk1K3yIZeu+hrJRMJxMAVdbcVFFbmR73oMXCrC9UiqGHnct+IdUQm7TjgV1lO8SVn6rHDUeVLRmh/Q==
+  dependencies:
+    "@yozora/ast" "^2.0.0"
+    "@yozora/character" "^2.0.0"
+    "@yozora/core-tokenizer" "^2.0.0"
+
+"@yozora/tokenizer-paragraph@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/tokenizer-paragraph/-/tokenizer-paragraph-2.0.0.tgz#29c948421b8147ac8faa7d8abc84783cb92ee788"
+  integrity sha512-1hay1FeF8cdCK7nDnzZThSMH/kbL/xAI2cGtHWSVbPmhGTaKhGx2aWF35dtrcyxygV9IuhfqfvcgYYOfOBvhdw==
+  dependencies:
+    "@yozora/ast" "^2.0.0"
+    "@yozora/character" "^2.0.0"
+    "@yozora/core-tokenizer" "^2.0.0"
+
+"@yozora/tokenizer-setext-heading@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/tokenizer-setext-heading/-/tokenizer-setext-heading-2.0.0.tgz#ddc5d8127d917f09c2615f1c4a1be7a7f345a615"
+  integrity sha512-OH6dlVirlZCe2nuSFPCuKHmSpt7PZfOFSXzLZtk/rqY84+JkepFEY1FxjuFXjmMJv2aKXzmPE7K7MBkbWKGkyw==
+  dependencies:
+    "@yozora/ast" "^2.0.0"
+    "@yozora/character" "^2.0.0"
+    "@yozora/core-tokenizer" "^2.0.0"
+
+"@yozora/tokenizer-table@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/tokenizer-table/-/tokenizer-table-2.0.0.tgz#981c344404cc272821ae96b2c4c3c3a99951d722"
+  integrity sha512-paK0bCjGy+LV+Hed1pwfqktbGdRGP8ESCybVdTtyb0+AAk0rFPhJwPmHIZqHIFgM9hz7Mzp2fDTpu0je141y+w==
+  dependencies:
+    "@yozora/ast" "^2.0.0"
+    "@yozora/character" "^2.0.0"
+    "@yozora/core-tokenizer" "^2.0.0"
+
+"@yozora/tokenizer-text@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/tokenizer-text/-/tokenizer-text-2.0.0.tgz#c3656239b41f28d4bd6bfb103a627534eb61961f"
+  integrity sha512-usyUhGPXeY5od76BMGSXCFxWqBW/w4E47CDpEAMvN1e0EkVMuhtGulMT10d0Rqed+FXfj54ON26aLdYxHW2omA==
+  dependencies:
+    "@yozora/ast" "^2.0.0"
+    "@yozora/character" "^2.0.0"
+    "@yozora/core-tokenizer" "^2.0.0"
+
+"@yozora/tokenizer-thematic-break@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@yozora/tokenizer-thematic-break/-/tokenizer-thematic-break-2.0.0.tgz#6d104a081e64e949041d8a5d81af02d386fcab5e"
+  integrity sha512-XymzlAdukx0ODq/M9HMePfwqmxjSDIfBhmj65YMshBTNM/WdMdHSleA75Ie1fKWAt3FxY3WawTfJ2tKsxgFHWQ==
+  dependencies:
+    "@yozora/ast" "^2.0.0"
+    "@yozora/character" "^2.0.0"
+    "@yozora/core-tokenizer" "^2.0.0"
+
 acorn-import-assertions@^1.7.6:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/acorn-import-assertions/-/acorn-import-assertions-1.8.0.tgz#ba2b5939ce62c238db6d93d81c9b111b29b855e9"
@@ -672,6 +969,11 @@ balanced-match@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
   integrity sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==
+
+boolbase@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
+  integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
 boxen@^5.0.0:
   version "5.1.2"
@@ -917,6 +1219,22 @@ crypto-random-string@^2.0.0:
   resolved "https://registry.yarnpkg.com/crypto-random-string/-/crypto-random-string-2.0.0.tgz#ef2a7a966ec11083388369baa02ebead229b30d5"
   integrity sha512-v1plID3y9r/lPhviJ1wrXpLeyUIGAZ2SHNYTEapm7/8A9nLPoyvVp3RK/EPFqn5kEznyWgYZNsRtYYIWbuG8KA==
 
+css-select@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/css-select/-/css-select-4.2.1.tgz#9e665d6ae4c7f9d65dbe69d0316e3221fb274cdd"
+  integrity sha512-/aUslKhzkTNCQUB2qTX84lVmfia9NyjP3WpDGtj/WxhwBzWBYUV3DgUpurHTme8UTPcPlAD1DJ+b0nN/t50zDQ==
+  dependencies:
+    boolbase "^1.0.0"
+    css-what "^5.1.0"
+    domhandler "^4.3.0"
+    domutils "^2.8.0"
+    nth-check "^2.0.1"
+
+css-what@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/css-what/-/css-what-5.1.0.tgz#3f7b707aadf633baf62c2ceb8579b545bb40f7fe"
+  integrity sha512-arSMRWIIFY0hV8pIxZMEfmMI47Wj3R/aWpZDDxWYCPEiOMv6tfOrnpDtgxBYPEQD4V0Y/958+1TdC3iWTFcUPw==
+
 debug@^4.0.1, debug@^4.1.1, debug@^4.3.1:
   version "4.3.3"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.3.tgz#04266e0b70a98d4462e6e288e38259213332b664"
@@ -990,6 +1308,36 @@ doctrine@^3.0.0:
   dependencies:
     esutils "^2.0.2"
 
+dom-serializer@^1.0.1:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/dom-serializer/-/dom-serializer-1.3.2.tgz#6206437d32ceefaec7161803230c7a20bc1b4d91"
+  integrity sha512-5c54Bk5Dw4qAxNOI1pFEizPSjVsx5+bpJKmL2kPn8JhBUq2q09tTCa3mjijun2NfK78NMouDYNMBkOrPZiS+ig==
+  dependencies:
+    domelementtype "^2.0.1"
+    domhandler "^4.2.0"
+    entities "^2.0.0"
+
+domelementtype@^2.0.1, domelementtype@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/domelementtype/-/domelementtype-2.2.0.tgz#9a0b6c2782ed6a1c7323d42267183df9bd8b1d57"
+  integrity sha512-DtBMo82pv1dFtUmHyr48beiuq792Sxohr+8Hm9zoxklYPfa6n0Z3Byjj2IV7bmr2IyqClnqEQhfgHJJ5QF0R5A==
+
+domhandler@^4.2.0, domhandler@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/domhandler/-/domhandler-4.3.0.tgz#16c658c626cf966967e306f966b431f77d4a5626"
+  integrity sha512-fC0aXNQXqKSFTr2wDNZDhsEYjCiYsDWl3D01kwt25hm1YIPyDGHvvi3rw+PLqHAl/m71MaiF7d5zvBr0p5UB2g==
+  dependencies:
+    domelementtype "^2.2.0"
+
+domutils@^2.8.0:
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/domutils/-/domutils-2.8.0.tgz#4437def5db6e2d1f5d6ee859bd95ca7d02048135"
+  integrity sha512-w96Cjofp72M5IIhpjgobBimYEfoPjx1Vx0BSX9P30WBdZW2WIKU0T1Bd0kz2eNZ9ikjKgHbEyKx8BB6H1L3h3A==
+  dependencies:
+    dom-serializer "^1.0.1"
+    domelementtype "^2.2.0"
+    domhandler "^4.2.0"
+
 dot-prop@^5.2.0:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/dot-prop/-/dot-prop-5.3.0.tgz#90ccce708cd9cd82cc4dc8c3ddd9abdd55b20e88"
@@ -1038,6 +1386,11 @@ enquirer@^2.3.5:
   integrity sha512-yjNnPr315/FjS4zIsUxYguYUPP2e1NK4d7E7ZOLiyYCcbFBiTMyID+2wvm2w6+pZ/odMA7cRkjhsPbltwBOrLg==
   dependencies:
     ansi-colors "^4.1.1"
+
+entities@^2.0.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/entities/-/entities-2.2.0.tgz#098dc90ebb83d8dffa089d55256b351d34c4da55"
+  integrity sha512-p92if5Nz619I0w+akJrLZH0MX0Pb5DX39XOwQTtXSdQQOaYH03S1uIQp4mhOZtAXrxq4ViO67YTiLBo2638o9A==
 
 envinfo@^7.7.3:
   version "7.8.1"
@@ -1497,6 +1850,11 @@ has@^1.0.3:
   integrity sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==
   dependencies:
     function-bind "^1.1.1"
+
+he@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
+  integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
 
 hosted-git-info@^2.1.4:
   version "2.8.9"
@@ -2021,6 +2379,14 @@ node-forge@^1.2.0:
   resolved "https://registry.yarnpkg.com/node-forge/-/node-forge-1.2.1.tgz#82794919071ef2eb5c509293325cec8afd0fd53c"
   integrity sha512-Fcvtbb+zBcZXbTTVwqGA5W+MKBj56UjVRevvchv5XrcyXbmNdesfZL37nlcWOfpgHhgmxApw3tQbTr4CqNmX4w==
 
+node-html-parser@^5.3.3:
+  version "5.3.3"
+  resolved "https://registry.yarnpkg.com/node-html-parser/-/node-html-parser-5.3.3.tgz#2845704f3a7331a610e0e551bf5fa02b266341b6"
+  integrity sha512-ncg1033CaX9UexbyA7e1N0aAoAYRDiV8jkTvzEnfd1GDvzFdrsXLzR4p4ik8mwLgnaKP/jyUFWDy9q3jvRT2Jw==
+  dependencies:
+    css-select "^4.2.1"
+    he "1.2.0"
+
 node-releases@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-2.0.2.tgz#7139fe71e2f4f11b47d4d2986aaf8c48699e0c01"
@@ -2057,6 +2423,13 @@ npm-run-path@^4.0.1:
   integrity sha512-S48WzZW777zhNIrn7gxOlISNAqi9ZC/uQFnRdbeIHhZhCA6UqpkOT8T1G7BvfdgP4Er8gF4sUbaS0i7QvIfCWw==
   dependencies:
     path-key "^3.0.0"
+
+nth-check@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/nth-check/-/nth-check-2.0.1.tgz#2efe162f5c3da06a28959fbd3db75dbeea9f0fc2"
+  integrity sha512-it1vE95zF6dTT9lBsYbxvqh0Soy4SPowchj0UBGj/V6cTPnXXtQOPUbhZ6CmGzAD/rW22LQK6E96pcdJXk4A4w==
+  dependencies:
+    boolbase "^1.0.0"
 
 once@^1.3.0, once@^1.3.1, once@^1.4.0:
   version "1.4.0"

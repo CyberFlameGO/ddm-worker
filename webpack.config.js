@@ -9,7 +9,7 @@ module.exports = {
     filename: 'worker.js',
     path: path.join(__dirname, 'build'),
   },
-  devtool: 'inline-source-map',
+  devtool: module.exports.mode === 'development' && 'inline-source-map',
   mode: ['prod', 'production'].includes(process.env.NODE_ENV)
     ? 'production'
     : 'development',
